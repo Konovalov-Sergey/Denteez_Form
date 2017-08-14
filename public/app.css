@@ -1,0 +1,301 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*common*/
+
+.inner {
+	max-width: 1350px;
+	min-width: 970px;
+	margin: 0 auto;
+}
+.inner::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+a {
+	text-decoration: none
+}
+	
+li {
+	list-style: none
+}
+body {
+    font-family: Proxima, Arial, Helvetica, sans-serif;
+}
+/*header*/
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 970px;
+	padding-top: 40px;
+}	
+.header .logo {
+	width: 130px;
+	height: 40px;
+	margin-left: 40px;
+}
+.header .logo a {
+	display: block;
+	height: 100%;
+}
+.header .btn {
+	width: 109px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	background-color: #87b448;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-right: 50px;
+	color: #fff;
+}
+.header .btn:hover {
+	border: 1px solid #87b448;
+	color: #87b448;
+	background: #fff;
+	cursor: pointer;
+}
+/*form*/
+#form {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+}
+#form.hidden {
+	display: none;
+}
+#form .form_wrapper {
+	width: 720px;
+	padding: 20px;
+	border-radius: 4px;
+	background: #fff;
+}
+#form div {
+	width: 100%;
+}
+#form .other label {
+	font-size: 0;
+	line-height: 0;
+}
+#form .name {
+	width: 345px;
+	display: inline-block;
+	margin-right: 30px;
+}
+#form .email {
+	width: 345px;
+	display: inline-block;
+}
+#form select {
+	height: 50px;
+	border-radius: 4px;
+	padding-left: 15px;
+}
+#form textarea {
+	height: 150px;
+	padding: 19px;
+	border-radius: 4px;
+	resize: none;
+	box-sizing: border-box;
+}
+#form label span {
+	float: right;
+}
+#form input, #form select, #form textarea {
+	width: 100%;
+	margin-bottom: 20px;
+}
+#form input {
+	height: 50px;
+	padding-left: 19px;
+	box-sizing: border-box;
+	border: 1px solid #c8cdd5;
+	border-radius: 4px;
+}
+#form p {
+	font-size: 16px;
+	color: #c1c1c1;
+	margin-bottom: 15px;
+}
+#form label {
+	font-size: 16px;
+	color: #1c2534;
+	line-height: 25px;
+}
+#form .image {
+	position: relative;
+	overflow: hidden;
+	width: 128px;
+	height: 128px;
+	padding: 32px 16px;
+	background: #f7f7f7;
+	border: 1px solid #c8cdd5;
+	border-radius: 4px;
+	text-align: center;
+	box-sizing: border-box;
+}
+#form .image:hover {
+	cursor: pointer;
+}
+#form .image p {
+	font-size: 16px;
+	color: #7c8695;
+	margin-bottom: 5px;
+}
+#form .image span {
+	font-size: 12px;
+	color: #c2c2c4;
+}
+#form .image [type='file'] {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: block;
+    opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+#form input[type='submit'] {
+	height: 52px;
+	border-radius: 5px;
+	background-color: #87b448;
+	color: #fff;
+	font-size: 16px;
+}
+#form input[type="submit"]:hover {
+	cursor: pointer;
+}
+/*promo*/
+.promo {
+	padding-top: 190px;
+	padding-bottom: 109px;
+}
+.promo .inner {
+	text-align: center;
+	color: #fff;
+}
+.promo h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+.promo p {
+	width: 495px;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+/*service*/
+.service {
+	padding-top: 815px;
+	border-bottom: 1px solid #e0e2e6;
+}
+/*about*/
+.about {
+	padding: 95px 0 95px 0;
+	border-bottom: 1px solid #e0e2e6;
+}
+.about h2 {
+	margin-bottom: 25px;
+	font-size: 30px;
+	color: #1c2534;
+	text-align: center;
+}
+.about p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #7c8695;
+	font-weight: 300;
+}
+.about .text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.about .text_1, .about .text_2 {
+	width: 600px;
+	margin-bottom: 15px;
+}
+/*footer*/
+.footer {
+	padding: 32px 0;
+}
+.footer p {
+	display: inline-block;
+	font-size: 12px;
+	color: #b7bfcd;
+}
+.footer ul {
+	margin-right: 20px;
+}
+.footer li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer li a {
+	display: block;
+	font-size: 12px;
+	color: #b7bfcd;
+}
+.footer li a:hover {
+	color: #87b448;
+}
+
+
+
